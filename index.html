@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header> 
         <div class="container header-container">
             <div class="logo">
                 <img src="images/562356152_835867892288435_3439607930458144395_n.jpg" alt="شعار مجمع الرحمة">
@@ -19,13 +19,12 @@
             <div class="menu-btn" onclick="toggleMenu()">
                 <i class="fas fa-bars"></i>
             </div>
-
             <nav id="nav-menu">
                 <div class="close-btn" onclick="toggleMenu()">
                     <i class="fas fa-times"></i>
                 </div>
                 <div class="nav-links">
-                    <a href="#about" onclick="toggleMenu()">من نحن</a>
+                    <a href="#about" onclick="toggleMenu()">من نحن </a>
                     <a href="#services" onclick="toggleMenu()">التخصصات</a>
                     <a href="#vision" onclick="toggleMenu()">رؤيتنا</a>
                     <a href="#contact" onclick="toggleMenu()">اتصل بنا</a>
@@ -41,11 +40,10 @@
     <section class="hero">
         <div class="hero-content hidden">
             <div class="slogan">بالرحمة نترك أثراً</div>
-            <h2>خدمة طبية بجودة عالية وأسعار مناسبة</h2>
+            <h2>خدمة طبية بجودة عالية و أسعار رمزية</h2>
             <p>عيادة خدمية تهدف لتخفيف العبء عن أهالينا مع الحفاظ على أعلى معايير الجودة</p>
             <br>
-            <a href="#contact" class="cta-btn" style="background-color: white; color: var(--main-color);">تواصل معنا</a>
-        </div>
+            <a href="#contact" class="cta-btn" style="background: white; color: var(--main-color); box-shadow: 0 4px 15px rgba(0,0,0,0.2);">تواصل معنا</a>         </div>
     </section>
     <section class="stats" id="stats">
         <div class="stat-box hidden">
@@ -61,46 +59,124 @@
         <div class="stat-box hidden">
             <i class="fas fa-hand-holding-heart"></i>
             <h3>خدمي</h3>
-            <p>أسعار مخفضة</p>
+            <p>أسعار رمزية</p>
         </div>
     </section>
     <section class="services" id="services">
-        <div class="section-title hidden">
-            <h2>تخصصاتنا الطبية</h2>
-            <p>رعاية شاملة لك ولأسرتك</p>
-        </div>
-        <div class="services-grid">
-            <div class="service-card hidden">
-                <div class="icon-box"><i class="fas fa-baby"></i></div>
+    <div class="section-title hidden">
+        <h2>تخصصاتنا الطبية</h2>
+        <p>رعاية شاملة لك ولأسرتك بأحدث الأجهزة</p>
+    </div>
+    <div class="services-grid">
+        <div class="service-card hidden">
+            <div class="img-box">
+                <img src="images/470491018_616855107399435_108230148983915393_n.jpg" alt="طب الأطفال">
+            </div>
+            <div class="card-content">
                 <h3>طب الأطفال</h3>
-                <p>رعاية شاملة لحديثي الولادة ومتابعة النمو.</p>
-            </div>
-            <div class="service-card hidden">
-                <div class="icon-box"><i class="fas fa-stethoscope"></i></div>
-                <h3>الباطنة</h3>
-                <p>تشخيص وعلاج الأمراض المزمنة والجهاز الهضمي.</p>
-            </div>
-            <div class="service-card hidden">
-                <div class="icon-box"><i class="fas fa-bone"></i></div>
-                <h3>العظام</h3>
-                <p>علاج آلام المفاصل والكسور والعمود الفقري.</p>
-            </div>
-            <div class="service-card hidden">
-                <div class="icon-box"><i class="fas fa-female"></i></div>
-                <h3>النساء والتوليد</h3>
-                <p>متابعة الحمل والسونار وصحة المرأة.</p>
-            </div>
-            <div class="service-card hidden">
-                <div class="icon-box"><i class="fas fa-tooth"></i></div>
-                <h3>الأسنان</h3>
-                <p>حشو، خلع، وتجميل الأسنان بأحدث الأجهزة.</p>
-            </div>
-            <div class="service-card hidden">
-                <div class="icon-box"><i class="fas fa-flask"></i></div>
-                <h3>التحاليل</h3>
-                <p>تعاقد مع أفضل المعامل لضمان الدقة.</p>
+                <p>رعاية شاملة لحديثي الولادة، متابعة النمو، والتطعيمات.</p>
             </div>
         </div>
+        <div class="service-card hidden">
+            <div class="img-box">
+                <img src="images/WhatsApp Image 2025-11-27 at 23.36.55_fa247b50.jpg" alt="الباطنة">
+            </div>
+            <div class="card-content">
+                <h3>الباطنة</h3>
+                <p>تشخيص وعلاج الأمراض المزمنة، السكر، والضغط، والجهاز الهضمي.</p>
+            </div>
+        </div>
+        <div class="service-card hidden">
+            <div class="img-box">
+                <img src="images/525468262_776481504893741_6445369544333225147_n.jpg" alt="العظام">
+            </div>
+            <div class="card-content">
+                <h3>العظام</h3>
+                <p>علاج آلام المفاصل، خشونة الركبة، الكسور، والعمود الفقري.</p>
+            </div>
+        </div>
+        <div class="service-card hidden">
+            <div class="img-box">
+                <img src="images/IMG-20251127-WA0010.jpg" alt="مخ وأعصاب">
+            </div>
+            <div class="card-content">
+                <h3>مخ وأعصاب</h3>
+                <p>علاج الصداع المزمن، الانزلاق الغضروفي، التهاب الأعصاب، والصرع.</p>
+            </div>
+        </div>
+        <div class="service-card hidden">
+            <div class="img-box">
+                <img src="images/IMG-20251127-WA0024.jpg" alt="النساء والتوليد">
+            </div>
+            <div class="card-content">
+                <h3>النساء والتوليد</h3>
+                <p>متابعة الحمل، السونار رباعي الأبعاد، وعلاج تأخر الإنجاب.</p>
+            </div>
+        </div>
+        <div class="service-card hidden">
+            <div class="img-box">
+                <img src="images/IMG-20251127-WA0022.jpg" alt="الأسنان">
+            </div>
+            <div class="card-content">
+                <h3>الأسنان</h3>
+                <p>حشو وتجميل الأسنان، التركيبات، والزراعة بأحدث التقنيات.</p>
+            </div>
+        </div>
+        <div class="service-card hidden">
+            <div class="img-box">
+                <img src="images/IMG-20251127-WA0041.jpg" alt="الجلدية">
+            </div>
+            <div class="card-content">
+                <h3>الجلدية والتجميل</h3>
+                <p>علاج الأمراض الجلدية، الليزر، والعناية بالبشرة والشعر.</p>
+            </div>
+        </div>
+        <div class="service-card hidden">
+            <div class="img-box">
+                <img src="images/IMG-20251127-WA0040.jpg" alt="الرمد">
+            </div>
+            <div class="card-content">
+                <h3>الرمد (العيون)</h3>
+                <p>قياس النظر، فحص قاع العين، وعلاج المياه البيضاء والزرقاء.</p>
+            </div>
+        </div>
+        <div class="service-card hidden">
+            <div class="img-box">
+                <img src="images/IMG-20251127-WA0004.jpg" alt="أنف وأذن">
+            </div>
+            <div class="card-content">
+                <h3>أنف وأذن وحنجرة</h3>
+                <p>علاج حساسية الجيوب الأنفية، اللوزتين، ومشاكل السمع والاتزان.</p>
+            </div>
+        </div>
+        <div class="service-card hidden">
+            <div class="img-box">
+                <img src="images/IMG-20251127-WA0013.jpg" alt="علاج طبيعي">
+            </div>
+            <div class="card-content">
+                <h3>العلاج الطبيعي</h3>
+                <p>تأهيل ما بعد الكسور، علاج الانزلاق الغضروفي، والسمنة والنحافة.</p>
+            </div>
+        </div>
+        <div class="service-card hidden">
+            <div class="img-box">
+                <img src="images/IMG-20251127-WA0020.jpg" alt="جراحة عامة">
+            </div>
+            <div class="card-content">
+                <h3>الجراحة العامة</h3>
+                <p>إجراء الجراحات الصغرى والمتوسطة وتطهير الجروح بأعلى تعقيم.</p>
+            </div>
+        </div>
+        <div class="service-card hidden">
+            <div class="img-box">
+                <img src="images/480342572_657249660150260_7816705047889556088_n.jpg" alt="تخاطب">
+            </div>
+            <div class="card-content">
+                <h3>التخاطب وتنمية المهارات</h3>
+                <p>جلسات لعلاج عيوب النطق، تأخر الكلام، وصعوبات التعلم.</p>
+            </div>
+        </div>
+    </div>
     </section>
     <section class="features">
         <div class="feature-content hidden">
@@ -153,10 +229,10 @@
                 <h3 style="margin-top: 30px; color: #ffc107; font-size: 1.2rem;">تابع أحدث أخبارنا والعروض على:</h3>
                 <div class="social-buttons">
                     <a href="https://whatsapp.com/channel/0029VbBMPU0KbYMDyn8Uxs2t" target="_blank" class="btn-social whatsapp-channel">
-                        اشترك في القناة <i class="fab fa-whatsapp"></i>
+                        قناتنا علي الواتس اب<i class="fab fa-whatsapp"></i>
                     </a>
                     <a href="https://www.facebook.com/share/1GFWwfEMeg/" target="_blank" class="btn-social facebook-page">
-                        صفحتنا ع الفيسبوك <i class="fab fa-facebook-f"></i>
+                        صفحتنا علي الفيسبوك <i class="fab fa-facebook-f"></i>
                     </a>
                 </div>
             </div>
@@ -167,18 +243,15 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 <script>
-    // تعريف العناصر
     const nav = document.getElementById('nav-menu');
     const overlay = document.getElementById('overlay');
-    const links = document.querySelectorAll('.nav-links a'); // كل الروابط
+    const links = document.querySelectorAll('.nav-links a'); 
 
-    // دالة فتح وإغلاق القائمة
     function toggleMenu() {
         nav.classList.toggle('active');
         overlay.classList.toggle('active');
     }
 
-    // إغلاق القائمة عند الضغط على أي رابط
     links.forEach(link => {
         link.addEventListener('click', () => {
             nav.classList.remove('active');
@@ -186,13 +259,11 @@
         });
     });
 
-    // إغلاق القائمة عند الضغط على الخلفية المظللة
     overlay.addEventListener('click', () => {
         nav.classList.remove('active');
         overlay.classList.remove('active');
     });
 
-    // --- كود الأنيميشن (Intersection Observer) ---
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
