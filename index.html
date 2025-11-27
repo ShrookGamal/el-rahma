@@ -167,22 +167,32 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 <script>
+    // تعريف العناصر
+    const nav = document.getElementById('nav-menu');
+    const overlay = document.getElementById('overlay');
+    const links = document.querySelectorAll('.nav-links a'); // كل الروابط
+
+    // دالة فتح وإغلاق القائمة
     function toggleMenu() {
-        const nav = document.getElementById('nav-menu');
-        const overlay = document.getElementById('overlay');
         nav.classList.toggle('active');
         overlay.classList.toggle('active');
     }
 
-    // إضافة مستمع للأحداث لروابط القائمة ليتم إغلاق القائمة عند الضغط
-    const navLinks = document.querySelectorAll('.nav-links a');
-    navLinks.forEach(link => {
+    // إغلاق القائمة عند الضغط على أي رابط
+    links.forEach(link => {
         link.addEventListener('click', () => {
-             // نتأكد أن القائمة تُغلق عند الضغط على رابط
-             toggleMenu();
+            nav.classList.remove('active');
+            overlay.classList.remove('active');
         });
     });
 
+    // إغلاق القائمة عند الضغط على الخلفية المظللة
+    overlay.addEventListener('click', () => {
+        nav.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+
+    // --- كود الأنيميشن (Intersection Observer) ---
     const observer = new IntersectionObserver((entries) => {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
@@ -190,7 +200,6 @@
             }
         });
     });
-
     const hiddenElements = document.querySelectorAll('.hidden');
     hiddenElements.forEach((el) => observer.observe(el));
 </script>
