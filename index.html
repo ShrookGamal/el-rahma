@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عيادات الرحمة التخصصية</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="images/562356152_835867892288435_3439607930458144395_n.jpg" alt="شعار مجمع الرحمة">
+                <h1>عيادات الرحمة التخصصية </h1>
+            </div>
+
+            <div class="menu-btn" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav id="nav-menu">
+                <div class="close-btn" onclick="toggleMenu()">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="nav-links">
+                    <a href="#about" onclick="toggleMenu()">من نحن</a>
+                    <a href="#services" onclick="toggleMenu()">التخصصات</a>
+                    <a href="#vision" onclick="toggleMenu()">رؤيتنا</a>
+                    <a href="#contact" onclick="toggleMenu()">اتصل بنا</a>
+                </div>
+                <a href="tel:01004665241" class="cta-btn mobile-cta">احجز الآن <i class="fas fa-phone"></i></a>
+            </nav>
+
+            <a href="tel:01004665241" class="cta-btn desktop-cta">احجز الآن <i class="fas fa-phone"></i></a>
+        </div>
+    </header>
+
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+    <section class="hero">
+        <div class="hero-content hidden">
+            <div class="slogan">بالرحمة نترك أثراً</div>
+            <h2>خدمة طبية بجودة عالية وأسعار مناسبة</h2>
+            <p>عيادة خدمية تهدف لتخفيف العبء عن أهالينا مع الحفاظ على أعلى معايير الجودة</p>
+            <br>
+            <a href="#contact" class="cta-btn" style="background-color: white; color: var(--main-color);">تواصل معنا</a>
+        </div>
+    </section>
+    <section class="stats" id="stats">
+        <div class="stat-box hidden">
+            <i class="fas fa-user-md"></i>
+            <h3>17</h3>
+            <p>طبيب متخصص</p>
+        </div>
+        <div class="stat-box hidden">
+            <i class="fas fa-stethoscope"></i>
+            <h3>11</h3>
+            <p>تخصص طبي</p>
+        </div>
+        <div class="stat-box hidden">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h3>خدمي</h3>
+            <p>أسعار مخفضة</p>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="section-title hidden">
+            <h2>تخصصاتنا الطبية</h2>
+            <p>رعاية شاملة لك ولأسرتك</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card hidden">
+                <div class="icon-box"><i class="fas fa-baby"></i></div>
+                <h3>طب الأطفال</h3>
+                <p>رعاية شاملة لحديثي الولادة ومتابعة النمو.</p>
+            </div>
+            <div class="service-card hidden">
+                <div class="icon-box"><i class="fas fa-stethoscope"></i></div>
+                <h3>الباطنة</h3>
+                <p>تشخيص وعلاج الأمراض المزمنة والجهاز الهضمي.</p>
+            </div>
+            <div class="service-card hidden">
+                <div class="icon-box"><i class="fas fa-bone"></i></div>
+                <h3>العظام</h3>
+                <p>علاج آلام المفاصل والكسور والعمود الفقري.</p>
+            </div>
+            <div class="service-card hidden">
+                <div class="icon-box"><i class="fas fa-female"></i></div>
+                <h3>النساء والتوليد</h3>
+                <p>متابعة الحمل والسونار وصحة المرأة.</p>
+            </div>
+            <div class="service-card hidden">
+                <div class="icon-box"><i class="fas fa-tooth"></i></div>
+                <h3>الأسنان</h3>
+                <p>حشو، خلع، وتجميل الأسنان بأحدث الأجهزة.</p>
+            </div>
+            <div class="service-card hidden">
+                <div class="icon-box"><i class="fas fa-flask"></i></div>
+                <h3>التحاليل</h3>
+                <p>تعاقد مع أفضل المعامل لضمان الدقة.</p>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="feature-content hidden">
+            <h2>ليه عيادات الرحمة ؟</h2>
+            <ul class="features-list">
+                <li><i class="fas fa-check-circle"></i> نخبة من الأطباء الاستشاريين والأخصائيين.</li>
+                <li><i class="fas fa-check-circle"></i> تعقيم عالي المستوى لمكافحة العدوى.</li>
+                <li><i class="fas fa-check-circle"></i> أسعار في المتناول لخدمة أهالينا.</li>
+                <li><i class="fas fa-check-circle"></i> موقع متميز وسهل الوصول.</li>
+            </ul>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <div class="about-content hidden">
+            <img src="images/562356152_835867892288435_3439607930458144395_n.jpg" alt="صورة العيادة">
+            <h2 style="color: var(--main-color);">هدفنا ورسالتنا</h2>
+            <p>
+                نسعى لتقديم خدمة طبية متميزة لا تهدف للربح المادي في المقام الأول، بل لتخفيف العبء وتوفير خدمة تليق بأهالينا، مع تخفيض الأسعار قدر الإمكان.
+            </p>
+        </div>
+    </section>
+    <section id="vision" class="vision">
+        <h2 class="hidden">خططنا المستقبلية</h2>
+        <div class="vision-cards">
+            <div class="card hidden">
+                <i class="fas fa-chart-line"></i>
+                <h3>المدى القريب</h3>
+                <p>الوصول إلى <strong>15 تخصص</strong> طبي متكامل خلال عامين بإذن الله.</p>
+            </div>
+            <div class="card hidden">
+                <i class="fas fa-baby"></i>
+                <h3>المدى البعيد</h3>
+                <p>افتتاح قسم <strong>حضانات أطفال</strong> خلال 5 سنوات إن شاء الله.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="contact">
+        <div class="hidden">
+            <h2>تواصل معنا للحجز والاستفسار</h2>
+            <p><i class="fas fa-map-marker-alt"></i> العنوان: كوبري هلول - منية الرقة - أطفيح</p>
+            
+            <div class="contact-info">
+                <p>اضغط على الرقم للاتصال:</p>
+                <a href="tel:01004665241">01004665241 <i class="fas fa-phone"></i></a>
+                <a href="tel:01015655836">01015655836 <i class="fas fa-phone"></i></a>
+                <a href="tel:01092691563">01092691563 <i class="fas fa-phone"></i></a>
+            </div>
+
+            <div class="social-section">
+                <h3 style="margin-top: 30px; color: #ffc107; font-size: 1.2rem;">تابع أحدث أخبارنا والعروض على:</h3>
+                <div class="social-buttons">
+                    <a href="https://whatsapp.com/channel/0029VbBMPU0KbYMDyn8Uxs2t" target="_blank" class="btn-social whatsapp-channel">
+                        اشترك في القناة <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="https://www.facebook.com/share/1GFWwfEMeg/" target="_blank" class="btn-social facebook-page">
+                        صفحتنا ع الفيسبوك <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <a href="https://wa.me/201004665241" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('nav-menu');
+            const overlay = document.getElementById('overlay');
+            nav.classList.toggle('active');
+            overlay.classList.toggle('active');
+        }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                console.log(entry)
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        });
+
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
