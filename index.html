@@ -166,24 +166,33 @@
     <a href="https://wa.me/201004665241" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
-    <script>
-        function toggleMenu() {
-            const nav = document.getElementById('nav-menu');
-            const overlay = document.getElementById('overlay');
-            nav.classList.toggle('active');
-            overlay.classList.toggle('active');
-        }
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                console.log(entry)
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('show');
-                }
-            });
-        });
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('nav-menu');
+        const overlay = document.getElementById('overlay');
+        nav.classList.toggle('active');
+        overlay.classList.toggle('active');
+    }
 
-        const hiddenElements = document.querySelectorAll('.hidden');
-        hiddenElements.forEach((el) => observer.observe(el));
-    </script>
+    // إضافة مستمع للأحداث لروابط القائمة ليتم إغلاق القائمة عند الضغط
+    const navLinks = document.querySelectorAll('.nav-links a');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+             // نتأكد أن القائمة تُغلق عند الضغط على رابط
+             toggleMenu();
+        });
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    });
+
+    const hiddenElements = document.querySelectorAll('.hidden');
+    hiddenElements.forEach((el) => observer.observe(el));
+</script>
 </body>
 </html>
