@@ -24,7 +24,6 @@
                 <div class="close-btn" onclick="toggleMenu()">
                     <i class="fas fa-times"></i>
                 </div>
-                <!-- تم حل مشكلة الكلام اللازق هنا عن طريق الـ CSS -->
                 <div class="nav-links">
                     <a href="#about">من نحن </a>
                     <a href="#services">التخصصات</a>
@@ -39,15 +38,12 @@
     </header>
 
     <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
-
-    <!-- Hero Section: تم إزالة hidden لتفعيل الأنيميشن فوراً -->
     <section class="hero">
         <div class="hero-content">
             <div class="slogan">بالرحمة نترك أثراً</div>
             <h2>خدمة طبية بجودة عالية و أسعار رمزية</h2>
             <p>عيادة خدمية تهدف لتخفيف العبء عن أهالينا مع الحفاظ على أعلى معايير الجودة</p>
             <br>
-            <!-- تم تعديل الستايل لضمان ظهور الزرار الأبيض -->
             <a href="#contact" class="cta-btn" style="background: white; color: var(--main-color); box-shadow: 0 4px 15px rgba(0,0,0,0.2);">تواصل معنا</a>         
         </div>
     </section>
@@ -254,7 +250,6 @@
     <!-- Footer Section -->
     <footer class="main-footer">
         <div class="footer-container">
-            <!-- العمود الأول: عن العيادة -->
             <div class="footer-col">
                 <h3>عيادات الرحمة التخصصية</h3>
                 <p>
@@ -265,8 +260,6 @@
                     <a href="https://whatsapp.com/channel/0029VbBMPU0KbYMDyn8Uxs2t" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
-
-            <!-- العمود الثاني: روابط سريعة -->
             <div class="footer-col">
                 <h3>روابط سريعة</h3>
                 <ul class="footer-links">
@@ -277,8 +270,6 @@
                     <li><a href="#contact">اتصل بنا</a></li>
                 </ul>
             </div>
-
-            <!-- العمود الثالث: معلومات التواصل -->
             <div class="footer-col">
                 <h3>تواصل معنا</h3>
                 <div class="contact-row">
@@ -296,10 +287,9 @@
             </div>
         </div>
         
-        <!-- حقوق النشر -->
         <div class="footer-bottom">
             <p>
-                جميع الحقوق محفوظة &copy; 2024 لعيادات الرحمة التخصصية 
+                جميع الحقوق محفوظة &copy;  لعيادات الرحمة التخصصية 
                 <span class="separator">|</span> 
                 تصميم وبرمجة 
                 <a href="https://www.facebook.com/share/17dkWLg8M9/" target="_blank" class="dev-link">GMTWEB</a>
@@ -321,7 +311,6 @@
             overlay.classList.toggle('active');
         }
 
-        // إغلاق القائمة عند الضغط على أي رابط
         links.forEach(link => {
             link.addEventListener('click', () => {
                 nav.classList.remove('active');
@@ -329,13 +318,11 @@
             });
         });
 
-        // إغلاق القائمة عند الضغط على الخلفية
         overlay.addEventListener('click', () => {
             nav.classList.remove('active');
             overlay.classList.remove('active');
         });
 
-        // مراقب السكرول لباقي العناصر
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
